@@ -1,0 +1,20 @@
+:host {
+  position: absolute;
+  top: 100%;
+}
+
+.simple-tabs-dots {
+  display: block;
+  position: relative;
+  top: 100%;
+  margin-top: -6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #DC0819;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}

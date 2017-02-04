@@ -1,0 +1,18 @@
+:host {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.simple-tabs-tab-background {
+  display: block;
+  position: relative;
+  top: 0px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgba(255, 165, 173, 0.35);
+  transition: 0.3s ease-in-out;
+  // opacity: 0;
+}

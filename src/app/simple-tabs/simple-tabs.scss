@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  position: relative;
+}
+
+.tab-body {
+  height: 100%;
+  outline: none;
+  overflow: scroll;
+  position: relative;
+
+  display: flex;
+  margin-right: 20px;
+}
+
+.tab-body {
+
+  .tab-item-body {
+    cursor: pointer;
+    padding: 10px;
+    margin: 0px 5px;
+
+    // &:hover {
+    //   background: #ccc;
+    // }
+  }
+
+}
+
+.simple-tabs-underliner {
+  display: block;
+  position: relative;
+  bottom: 2px;
+  height: 2px;
+  background: #DC0819;
+  transition: 0.3s ease-in-out;
+  // opacity: 0;
+}
+
+.simple-tabs-tab-background {
+  display: block;
+  position: absolute;
+  top: 0px;
+  border-radius: 5px;
+  background: lightskyblue;
+  transition: 0.3s ease-in-out;
+  // opacity: 0;
+}

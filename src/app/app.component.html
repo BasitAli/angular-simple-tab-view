@@ -1,0 +1,93 @@
+<nav>
+  <h1 class="heading">
+    Simple Tab View
+  </h1>
+
+  <simple-tabs class="tab-bar" #mainTabs [items]="['Home', 'Examples', 'Contact']">
+    <template let-item let-selected="selected">
+      <span class="main-tab-item" [ngClass]="{selected: selected}">{{item}}</span>
+    </template>
+    <simple-tabs-dots-accessory [tabParent]="mainTabs"></simple-tabs-dots-accessory>
+  </simple-tabs>
+</nav>
+
+<div class="tab-content home" simple-tabs-content [tabParent]="mainTabs" [tabId]="0">
+
+  <h3> Home </h3>
+
+  This component allows you to switch between different elements (placed anywhere in the dom) through a tab bar. The tab bar
+  can also be placed anywhere and is referenced through a template var.
+
+</div>
+
+<div class="tab-content examples" simple-tabs-content [tabParent]="mainTabs" [tabId]="1">
+
+  <h3>Examples</h3>
+
+  <h4>Underline Accessory</h4>
+  <simple-tabs class="animated-tab-bar" #underlinedTabs [items]="['Tab 1', 'Tab 2', 'Tab 3']">
+    <simple-tabs-underline-accessory [tabParent]="underlinedTabs"></simple-tabs-underline-accessory>
+  </simple-tabs>
+
+  <div class="example">
+    <div class="tab-content examples" simple-tabs-content [tabParent]="underlinedTabs" [tabId]="0">
+      Tab 1 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="underlinedTabs" [tabId]="1">
+      Tab 2 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="underlinedTabs" [tabId]="2">
+      Tab 3 Content
+    </div>
+  </div>
+
+  <h4>Background Accessory</h4>
+
+  <simple-tabs class="animated-tab-bar" #backgroundTabs [items]="['Tab 1', 'Tab 2', 'Tab 3']">
+    <simple-tabs-background-accessory [tabParent]="backgroundTabs"></simple-tabs-background-accessory>
+  </simple-tabs>
+
+  <div class="example-background">
+    <div class="tab-content examples" simple-tabs-content [tabParent]="backgroundTabs" [tabId]="0">
+      Tab 1 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="backgroundTabs" [tabId]="1">
+      Tab 2 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="backgroundTabs" [tabId]="2">
+      Tab 3 Content
+    </div>
+  </div>
+
+  <h4>Dots Accessory</h4>
+  <div class="example">
+    <div class="tab-content examples" simple-tabs-content [tabParent]="dottedTabs" [tabId]="0">
+      Tab 1 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="dottedTabs" [tabId]="1">
+      Tab 2 Content
+    </div>
+
+    <div class="tab-content examples" simple-tabs-content [tabParent]="dottedTabs" [tabId]="2">
+      Tab 3 Content
+    </div>
+  </div>
+
+  <simple-tabs class="animated-tab-bar" #dottedTabs [items]="['Tab 1', 'Tab 2', 'Tab 3']">
+    <simple-tabs-dots-accessory [tabParent]="dottedTabs"></simple-tabs-dots-accessory>
+  </simple-tabs>
+
+</div>
+
+<div class="tab-content github" simple-tabs-content [tabParent]="mainTabs" [tabId]="2">
+
+  <h3> Contact </h3>
+
+  <a href="http://github.com/BasitAli/" target="blank">Github</a>
+
+</div>

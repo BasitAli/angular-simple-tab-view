@@ -1,0 +1,15 @@
+:host {
+  position: absolute;
+  top: 100%;
+}
+
+.simple-tabs-underliner {
+  display: block;
+  position: relative;
+  top: 100%;
+  margin-top: -2px;
+  height: 2px;
+  background: #DC0819;
+  transition: 0.3s ease-in-out;
+  // opacity: 0;
+}

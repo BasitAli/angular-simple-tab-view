@@ -1,0 +1,30 @@
+.heading {
+  margin: 0;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  .heading {
+    flex: 1;
+  }
+}
+
+.tab-content {
+  padding: 20px;
+}
+
+.main-tab-item.selected {
+  color: #DC0819;
+}
+
+.example {
+  border: 1px dashed lightcoral;
+  padding: 10px;
+}
+
+.example-background {
+  background-color: rgba(255, 165, 173, 0.35)
+}
